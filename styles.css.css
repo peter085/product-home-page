@@ -1,0 +1,265 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+
+} 
+body{
+    max-width: 100%;
+
+  }
+
+  /* ...........nav--section.............. */
+
+.nav-bar{
+    display: flex;
+ 
+    align-items: center;
+    justify-content:space-between;
+    justify-items: center;
+    height: 20vh;
+
+}
+
+.nav-items{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    
+   cursor: pointer;
+    gap: 30px;
+}
+
+.nav-item{
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.active-item{
+color: orangered;
+}
+
+
+
+/* intro section */
+.intro-section{
+    display: flex;
+    flex-direction: row;
+    max-width: 78rem;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+    
+}
+
+
+.left-section{
+max-width: 35rem;
+}
+
+.left-section h3 {
+    font-size: 30px;
+
+}
+.left-section h1{
+    font-size: 60px;
+}
+
+
+.sub-headlines h5{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.sub-headlines img{
+    background-color: orangered;
+    border-radius: 100px;
+    height: 20px;
+}
+
+.text{
+    margin-top: 50px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.action-btns{
+   margin-top: 30px;
+}
+
+.action-btn{
+    background-color: rgb(248, 83, 23);
+    border: none;
+    padding: 15px 25px;
+    border-radius: 15px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* right- section */
+
+
+.right-section{
+    position: relative;
+    align-items: center;
+  
+    max-width: 30rem;
+}
+.headphone-div >img{
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+    z-index: +6;
+    filter: drop-shadow(5px 5px 0px white);
+}
+.img{
+    margin-top: -150px;
+}
+
+.img img{
+    position: relative;
+    height: 65vh;
+    width: 35rem;
+   margin-bottom: -40px;
+    z-index: -1;
+}
+
+.discount-content{
+    position: absolute;
+    margin-top: 280px;
+    z-index: +10;
+    left: 50px;
+    color: white;
+}
+.discount-content h1{
+    font-size: 60px;
+    font-weight:900;
+}
+
+.dots{
+    position: absolute;
+    margin-left: 220px;
+    display:  inline-flex;
+    justify-content:center;
+    gap: 10px;
+    align-content: center;
+    
+}
+.dot {
+background-color: black;
+height: 30px;
+width: 30px;
+border-radius: 100px;
+cursor: pointer;
+}
+
+.yellow-dot{
+   background-color: yellow;
+}
+.tomato-dot{
+    background-color: red;
+}
+
+
+.right-section .action-btn{
+    position: absolute;
+    bottom: -100px;
+    left: 220px;
+    cursor: pointer;
+}
+
+
+/*  nav & intro */
+
+
+@media only screen and (max-width: 797px){
+
+    nav{
+        height: 12vh;
+        overflow-x: auto;
+    }
+    .nav-items {
+        margin-left: 10px;
+
+    }
+    .intro-section{
+        position: relative;
+        flex-direction: column-reverse;
+        padding: 0;
+        
+        gap: 100px;
+        align-content: center;
+        overflow-y: auto;}
+
+/* .......left section.......... */
+.left-section{
+    width: 300px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.left-section .action-btn{
+    padding: 10px 15px;
+    font-size: 10px;
+}
+
+
+
+
+
+
+    
+/* ...........right--secton........ */
+    .right-section{
+        margin: 0 auto;
+        align-items: center;
+        margin-top: -100px;
+        
+        
+    }
+
+    .headphone-div img{
+        position: absolute;
+        width: 130px;
+        margin-top: 100px;
+    }
+    .discount-content{
+        margin-bottom: 100px;
+    }
+    .dots{
+       margin-left: 100px;
+       padding-top: 50px;
+       cursor: pointer;
+    }
+    .dot{
+        height: 15px;
+        width: 15px;
+    }
+    .right-section .action-btn{
+        padding: 10px 15px;
+        font-size: 10px;
+        position: relative;
+        margin-left: -120px;
+        cursor: pointer;
+    }
+
+
+
+    .img img{
+        width: 300px;
+        height: 350px;
+        position: relative;
+    }
+
+
+}
+
+
+
